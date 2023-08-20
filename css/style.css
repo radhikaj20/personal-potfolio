@@ -1,0 +1,811 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    /* doesnot works on safari */
+    /* scroll-behavior: smooth; */
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background: rgb(29 29 29 / 99%);
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+/* Nav Bar  */
+.only_mobile_nav{
+    display: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 4.5rem 4.2rem;
+}
+
+.main-nav{
+    margin-top: -3px;
+}
+
+.main-nav-list{
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+    list-style: none;
+}
+
+.main-nav-link:link, 
+.main-nav-link:visited{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: normal;
+    color: rgb(255, 255, 255);
+    padding: 0.7rem 1.4rem;
+    transition: all .2s ease-in-out;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active{
+    padding: 0.7rem 1.4rem;
+    border-radius: 3px;
+    color: rgb(227, 64, 95)!important;
+}
+
+
+
+.sticky .header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999999;
+    height: 6rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0 1rem 2.6rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero{
+    margin-top: 9.6rem;
+}
+
+
+.logo-name{
+    font-size: 3em;
+    line-height: normal;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0 1rem;
+}
+
+.header-logo{
+    text-decoration: none;
+}
+
+.mobile-nav-icon{
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+}
+
+
+.mobile-navbar-btn{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon[name='close-outline']{
+    display: none;
+}
+/*  Body  */
+
+.social-icons{
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    padding: 0.6rem;
+}
+
+.section-hero{
+    padding: 10rem 0 5rem 0;
+    min-height: calc(100vh - 46px);
+}
+
+.hero{
+    max-width: 90rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding: 0 2.2rem;
+    align-items: center;
+}
+
+.hero-img{
+    max-width: 100%;
+    height: 40rem;
+    display: inline-block;
+}
+
+.hero-text-box{
+    color: rgb(255, 255, 255);
+}
+.hero-text-box h3{
+    color: rgb(141, 141, 141);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.hero-primary{
+    font-size: 4.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.hero-name{
+    color: rgb(227, 64, 95);
+}
+
+.main-name{
+    letter-spacing: 2px;
+    color: rgb(141, 141, 141);
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+}
+
+.passion{
+    font-size: 3rem;
+    color: rgb(141, 141, 141);
+    margin-bottom: 3rem;
+}
+
+
+.ln-p{
+    display: inline-block;
+    background-color: #0e76a8;
+    border-radius: 50%;
+    height: 41px;
+    width: 40px;
+    font-size: 1.3rem;
+    margin-right: 5px;
+}
+
+.ln-p:hover{
+    box-shadow: 0 5px 15px #0e76a8;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ln-logo{
+    padding: 10px;
+}
+
+.github{
+    background-color: #333;
+    margin-right: 5px;
+}
+
+.github:hover{
+    box-shadow: 0 5px 15px #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.instagram{
+    background-color: #e4405f;
+    margin-right: 5px;
+}
+
+.instagram:hover{
+    box-shadow: 0 5px 15px #e4405f;
+    color: #fff;
+    cursor: pointer;
+}
+
+.google{
+    background-color: #ea4335;
+    margin-right: 5px;
+}
+
+.google:hover{
+    box-shadow: 0 5px 15px #ea4335;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-btn{
+    background-color: rgb(252, 16, 86);
+    border-radius: 8px;
+    border-width: 0;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 700;
+    height: 50px;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    text-decoration: none;
+    width: 20rem;
+    cursor: pointer;
+}
+
+.contact-btn:hover{
+    box-shadow: 0 2px 10px rgb(227, 64, 95);
+}
+
+.container{
+    max-width: 95rem;
+    margin: 4rem auto;
+}
+
+.sub-heading{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(227, 64, 95);
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.60px;
+}
+
+.heading-about{
+    text-align: center;
+    font-size: 3.6rem;
+    color: #fff;
+    line-height: 1.25;
+    margin-bottom: 2.2rem;
+}
+
+.into-info{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.into-info img{
+    height: 16rem;
+    width: 16rem;
+    text-align: center;
+    margin: 2rem 2rem 2rem 4rem;
+    border-radius: 50%;
+}
+
+.about-me{
+    color: rgb(141, 141, 141);
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 110rem;
+    margin: 15rem auto 10rem auto;
+}
+
+.skills-pic{
+    max-width: 90rem;
+    width: 80%;
+    align-self: center;
+
+}
+
+.skill-heading{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.icons{
+    width: 5em;
+    height: 5em;
+}
+.skill-icon{
+    display: inline-block;
+    padding: 1.2rem;
+}
+
+.skill-grid{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.footer-container{
+    max-width: 90rem;
+    margin: 3rem auto 1.2rem auto;
+}
+
+.footer-text{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(141, 141, 141);
+    font-weight: 700;
+}
+
+.degree-received{
+    max-width: 100rem;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.heading-education{
+    margin: 10rem 0 4rem 0;
+    font-size: 5.5rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.edu-header-img{
+    width: 450px;
+    display: inline-block;
+    height: 450px;
+}
+
+.sub-heading-edu{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.edu-para{
+    color: rgb(141, 141, 141);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.education-header{
+    margin-bottom: 5rem;
+}
+
+.education-header h1{
+    font-size: 3.8rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.edu-container{
+    max-width: 95rem;
+    margin: 4rem auto 8rem auto;
+
+}
+
+.edu-div{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 3.5rem;
+}
+
+.scoe{
+    max-width: 95%;
+    max-height: 95%;
+    padding: 5rem;
+    border-radius: 50%;
+    border: 1px solid rgb(227, 64, 95);
+    transition: all 0.2s ease-in-out 0s;
+}
+.scoe:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: rgb(227 64 95) 0px 5px 15px;
+}
+
+.edu-pic{
+    align-self: center;
+}
+
+.edu-header{
+    display: flex;
+    background-color: rgb(227, 64, 95);
+    border-radius: 6px 6px 0 0;
+}
+
+.edu-title{
+    width: 70%;
+}
+
+.edu-title h2{
+    font-size: 2.3rem;
+    margin: 2.5rem 1rem 1.3rem 2rem;
+
+}
+
+.edu-title h3{
+    font-size: 18px;
+    margin: 0 1rem 2rem 2rem;
+    font-weight: 500;
+}
+
+.edu-duration{
+    float: right;
+    width: 35%;
+}
+
+.edu-duration h3{
+    float: right;
+    padding: 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.edu-detail{
+    border-radius: 8px;
+    padding: 2.5rem;
+    line-height: 2rem;
+}
+
+.edu-detail p{
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.edu-detail span{
+    margin-right: 4px;
+    color: #00fe00;
+}
+
+.edu-detail ul{
+    list-style: none;
+}
+
+
+.edu-info{
+    border: 1px solid rgb(227, 64, 95);
+    box-shadow: rgb(227 64 95) 0px 0px 5px;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.edu-info:hover{
+    box-shadow: rgb(227 64 95) 0px 5px 15px;
+}
+
+.btn-college a{
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    color: #fff;
+    padding: 1.4rem 2.8rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    background-color: rgb(227, 64, 95);
+    margin: 0 2rem 2rem 0;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.btn-college a:hover{
+    box-shadow: rgb(227 64 95) 0px 5px 15px;
+    color: #fff;
+}
+
+.card-body{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 3.5rem;
+    max-width: 95rem;
+    margin: 6rem auto;
+}
+
+.card{
+    margin: 5rem 0;
+}
+
+.projects-container{
+    max-width: 120rem;
+    margin: 5rem auto 4rem auto;
+}
+
+.project-header h1,
+.project-header p
+{
+    text-align: center;
+}
+
+.project-header h1{
+    color: rgb(255, 255, 255);
+    font-size: 3.5rem;
+}
+
+.project-header p{
+    color: rgb(141, 141, 141);
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.project-name h2{
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    font-weight: 500;
+}
+
+.project-card{
+    padding: 2rem;
+    background-color: rgb(41, 42, 45);
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.project-card:hover{
+    box-shadow: rgb(41 42 45) 0px 2px 15px;
+}
+.project-card p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: normal;
+    line-height: 1.3;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.skill-project{
+    font-size: 1.2rem;
+    background-color: #E3405F;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+.skils-logo{
+    display: inline-block;
+
+}
+
+.href-btn{
+    text-decoration: none;
+    color: #00fe00;
+}
+
+.git-project{
+    background-color: rgb(252, 16, 86);
+    border-radius: 7px;
+    color: #fff;
+    font-weight: 700;
+    padding: 15px;
+    border: none;
+    text-decoration: none;
+    font-size: 1.7rem;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.git-project:hover,
+.btn--form:hover{
+    box-shadow: rgb(227 64 95) 0px 5px 15px;
+}
+
+.git-btn{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heading-contact{
+    margin: 4rem 0;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.cta-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2.6rem;
+    row-gap: 1.8rem;
+}
+
+
+.cta-form input,
+.cta-form select,
+#your-message{
+    width: 100%;
+    padding: 1.2rem 2.4rem;
+    font-size: 2rem;
+    border: none;
+    background-color: rgb(46 44 44);
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out 0s;
+    color: #fff;
+}
+.cta-form input:focus,
+#your-message:focus{
+    box-shadow: rgb(41 42 45) 0px 2px 15px;
+    outline: none;
+    color: #fff;
+}
+
+.btn--form{
+    background-color: rgb(252, 16, 86);
+    border-radius: 7px;
+    color: #fff;
+    font-weight: 700;
+    padding: 15px;
+    border: none;
+    text-decoration: none;
+    font-size: 1.7rem;
+    margin: 0 auto;
+    min-width: 80%;
+    cursor: pointer;
+}
+
+.logo-cta{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+.logo-cta .ln-p{
+    margin-right: 2rem;
+}
+
+
+.logo-cta .github{
+    margin-right: 2rem;
+}
+
+.logo-cta .instagram{
+    margin-right: 2rem;
+}
+
+.logo-cta .google{
+    margin-right: 2rem;
+}
+
+.intro-btn{
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.intro-btn .contact-btn{
+    margin-right: 2.5rem;
+    text-transform: uppercase;
+}
+
+.hero-img{
+    animation: move 2s 100;
+    position: relative;
+}
+@keyframes move{
+    0%{top:0px;}
+    50%{top: 10px;}
+    100%{top:0px;}
+}
+
+.certificates{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.certificate-container{
+    margin: 5rem auto;
+    max-width: 100rem;
+}
+
+.logo-cer img{
+    width: 20rem;
+    height: 10rem;
+    margin: 1rem auto;
+    display: 80%;
+}
+
+.logo-cer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(246, 184, 8);
+}
+
+.certificate{
+    box-shadow: rgb(246 184 8) 0px 2px 5px;
+    border: 1px solid rgb(246, 184, 8);
+}
+
+.certificate:hover{
+    box-shadow: rgb(246 184 8) 0px 5px 15px;
+}
+
+.content-cer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.content-cer h2{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.content-cer p{
+    color: rgb(141, 141, 141);
+    font-size: 1.8rem;
+    margin-top: 0.5rem
+}
+
+.bg-green{
+    background-color: rgb(71, 160, 72);
+}
+.bg-skin{
+    background-color: rgb(255, 196, 117);
+}
+.bg-blue{
+    background-color: rgb(30, 112, 193);
+}
+.bg-purple{
+    background-color: rgb(177, 144, 176);
+}
+.bg-lpink{
+    background-color: rgb(255, 191, 174);
+}
+
+.shadow-green{
+    box-shadow: rgb(71 160 72) 0px 2px 5px;
+    border: 1px solid rgb(71, 160, 72);
+}
+.shadow-green:hover{
+    box-shadow: rgb(71 160 72) 0px 5px 15px;
+}
+.shadow-skin{
+    box-shadow: rgb(255, 196, 117) 0px 2px 5px;
+    border: 1px solid rgb(255, 196, 117);
+}
+.shadow-skin:hover{
+    box-shadow: rgb(255, 196, 117) 0px 5px 15px;
+}
+.shadow-blue{
+    box-shadow: rgb(30, 112, 193) 0px 2px 5px;
+    border: 1px solid rgb(30, 112, 193);
+}
+.shadow-blue:hover{
+    box-shadow: rgb(30, 112, 193) 0px 5px 15px;
+}
+.shadow-purple{
+    box-shadow: rgb(177, 144, 176) 0px 2px 5px;
+    border: 1px solid rgb(177, 144, 176);
+}
+.shadow-purple:hover{
+    box-shadow: rgb(177, 144, 176) 0px 5px 15px;
+}
+.shadow-lpink{
+    box-shadow: rgb(255, 191, 174) 0px 2px 5px;
+    border: 1px solid rgb(255, 191, 174);
+}
+.shadow-lpink:hover{
+    box-shadow: rgb(255, 191, 174) 0px 5px 15px;
+}
+
+.img-coursera img{
+    width: auto;
+}
+
+.certificate-container h1{
+    font-size: 3.8rem;
+    text-align: center;
+    margin: 5rem;
+    letter-spacing: 1px;
+}

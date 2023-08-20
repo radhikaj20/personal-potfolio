@@ -1,0 +1,333 @@
+@media (max-width: 1188px){
+    .logo-name {
+        font-size: 2.5em;
+    }
+    .main-nav-link:visited,
+    .main-nav-link:link{
+        font-size: 1.7rem;
+    }
+    .container{
+        max-width: 90rem;
+    }
+    .skills{    
+    max-width: 100rem;
+    }
+}
+
+@media (max-width: 1000px){
+    .logo-name {
+        font-size: 2.1em;
+    }
+    .main-nav-link:visited,
+    .main-nav-link:link{
+        font-size: 1.5rem;
+    }
+    .container{
+        max-width: 85rem;
+    }
+    .skills{    
+        max-width: 95rem;
+    }
+    .skills-pic{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 900px){
+    .main-nav-list{
+        gap:2rem
+    }
+    .container {
+        max-width: 80rem;
+    }
+    .main-nav-link:visited,
+    .main-nav-link:link{
+        font-size: 1.2rem;
+    }
+    .hero-primary {
+        font-size: 4rem;
+    }
+    .main-name{
+        font-size: 3rem;
+    }
+    .passion{
+        font-size: 2.6rem;
+    }
+    .hero{
+        max-width: 85rem;
+    }
+    .sub-heading{
+        font-size: 1.8rem;
+    } 
+    .heading-about {
+        font-size: 3rem;
+    }
+    .about-me {
+        font-size: 1.7rem;
+    }
+    .skill-heading {
+        font-size: 3rem;
+    }
+    .skills-pic{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .skill-icon {
+        padding: 1rem;
+    }
+    .icons {
+        width: 4.5em;
+        height: 4.5em;
+    }
+    .hero {
+        max-width: 80rem;
+    }
+}
+@media (max-width: 790px){
+    .mobile-navbar-btn{
+        display: block;
+        z-index: 99999999999;
+    }
+    .main-nav{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(29 29 29 / 99%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999999999999999999999999999999999999999999999999999999;
+        transform: translateX(100%);
+        transition: all 0.3s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .header{
+        position: relative;
+    }
+    .main-nav-list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .active .main-nav{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    .active .mobile-nav-icon[name='close-outline']{
+        display: block;
+    }
+    .active .mobile-nav-icon[name='menu-outline']{
+        display: none;
+    }
+    .main-nav-link:visited,
+    .main-nav-link:link{
+        font-size: 1.7rem;
+    }
+    .mobile-navbar-btn{
+        margin-top: 1rem;
+    }
+    .header {
+        padding: 4.5rem 2rem;
+    }
+    .hero-primary{
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    .main-name{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .passion{
+        text-align: center;
+        font-size: 2.1rem;
+    }
+    .social-media-logo{
+        text-align: center;
+    }
+    .contact-me-btn{
+        text-align: center;
+    }
+    .hero{
+        grid-template-columns: 1fr;
+    }
+    .section-hero{
+        padding-top: 5rem;
+        padding-bottom: 0px;
+    }
+    .hero-img {
+        height: 32rem;
+        margin-top: 1rem;
+    }
+    .container{
+        margin: 0rem auto;
+    }
+    .into-info{
+        grid-template-columns: 1fr;
+    }
+    .into-info img{
+        margin: 2rem auto;
+        height: 16rem;
+        width: 16rem;
+        border-radius: 50%;
+    }
+    .about-me{
+        text-align: center;
+        margin: 0 14px;
+        font-size: 1.6rem;
+    }
+    .heading-about {
+        font-size: 2.6rem;
+    }
+    .marginR-0{
+        margin-right: 0 !important;
+    }
+    .skills-pic{
+        display: none;
+    }
+    .skills{
+        grid-template-columns: 1fr;
+    }
+    .skill-grid{
+        grid-template-columns: repeat(5,1fr);
+    }
+    .skill-container{
+        margin: 0 2rem;
+    }
+
+    /* education page */
+    .degree-received{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        grid-gap: 2rem;
+    }
+    .edu-header-img{
+        height: 300px;
+        width: 300px;
+        margin-left: 1rem;
+    }
+    .heading-img-div{
+        text-align: center;
+    }
+    .heading-education {
+        margin: 0 0 2rem 0;
+        font-size: 3.5rem;
+        text-align: center;
+        font-weight: 400;
+        line-height: 1.1;
+    }
+    .sub-heading-edu{
+        font-size: 2rem;
+        margin: 0 0.7rem;
+    }
+    .edu-para{
+        font-size: 1.8rem;
+        margin: 2rem 2rem 0rem 2rem;
+    }
+    .education-header h1{
+        font-size: 3rem;
+    }
+    .edu-div{
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-gap: 0;
+    }
+    .scoe {
+        max-width: 45%;
+        max-height: 45%;
+        padding: 3rem;
+    }
+    .edu-header{
+        flex-direction: column;
+    }
+    .edu-info{
+        margin: 4rem;
+    }
+    .edu-title{
+        width: 100%;
+    }
+    .edu-title h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .edu-title h3{
+        font-size: 16px;
+        margin: 0 1rem 1rem 2rem;
+        text-align: center;
+    }
+    .edu-duration{
+        width: 100%;
+        float: none !important;
+    }
+    .edu-duration h3{
+        float: none !important;
+        padding-top: 0;
+        padding: 1.5rem;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .center-btn-edu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-college a {
+        margin: 0 0 2rem 0;
+    }
+    .certificate-container h1{
+        font-size: 3rem;
+    }
+    .certificates{
+        grid-template-columns: 1fr;
+        margin: 0 1.4rem;
+    }
+    .certificate{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .content-cer h2{
+        font-size: 1.8rem;
+    }
+    .card-body{
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-top: 2rem;
+    }
+    .edu-pic{
+        text-align: center;
+    }
+    .project-header h1{
+        font-size: 2.5rem;
+    }
+    .degree-head{
+        margin-top: 6rem;
+    }
+    .projects-container{
+        padding: 2rem;
+    }
+    .projects{
+        grid-template-columns: 1fr;
+    }
+    .project-card{
+        margin: 0 1rem;
+    }
+    .git-project {
+        padding: 13px;
+        font-size: 1.5rem;
+    }
+    .cta-form{
+        padding: 0 2rem;
+    }
+    .heading-contact{
+        padding: 0 1rem;
+    }
+    .mobile-nav-icon{
+        color: rgb(227, 64, 95);
+    }
+}
+
