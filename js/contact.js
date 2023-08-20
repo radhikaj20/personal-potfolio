@@ -1,4 +1,4 @@
-//for education.html
+//for https://radhikaj20.github.io/personal-potfolio/education.html
 const mobile_nav_contact = document.querySelector('.mobile-navbar-btn-contact');
 const headerEl_contact = document.querySelector('.header-contact');
 const main_body_contact = document.querySelector('.main-contact');

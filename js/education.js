@@ -1,4 +1,4 @@
-//for education.html
+//for https://radhikaj20.github.io/personal-potfolio/education.html
 const mobile_nav_edu = document.querySelector('.mobile-navbar-btn-edu');
 const headerEl_edu = document.querySelector('.header-edu');
 const main_body_edu = document.querySelector('.main-edu');

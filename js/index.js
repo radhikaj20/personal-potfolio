@@ -4,7 +4,7 @@ var typed = new Typed(".auto-typed", {
     backSpeed: 50,
     loop: true
 })
-//for index.html
+//for https://radhikaj20.github.io/personal-potfolio/index.html
 const mobile_nav = document.querySelector('.mobile-navbar-btn');
 const headerEl = document.querySelector('.header');
 const main_body = document.querySelector('main');
